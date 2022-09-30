@@ -17,7 +17,7 @@ SRC	:=			TestTemplate/Logfile/Logfile.cpp TestTemplate/Timer/Timer.cpp main.cpp
 # Src directory
 SRC_DIR		:=	./tester/
 # Subdirectories of src
-SRCS_SUBDIR	:=	tester/TestTemplate/ tester/TestTemplate/Logfile/ tester/TestTemplate/Timer/
+SRCS_SUBDIR	:=	./tester/TestTemplate/ ./tester/TestTemplate/Logfile/ ./tester/TestTemplate/Timer/
 # Full paths sources
 SRCS		:= $(addprefix $(SRC_DIR), $(SRC))
 
