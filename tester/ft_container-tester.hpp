@@ -11,9 +11,9 @@
 #define BOTH_ARG	3
 #define NONE		0
 
-#include "../../ft_containers/map/map.hpp"
-#include "../../ft_containers/stack/stack.hpp"
-#include "../../ft_containers/vector/vector.hpp"
+#include "../map/map.hpp"
+#include "../stack/stack.hpp"
+#include "../vector/vector.hpp"
 
 
 #endif
