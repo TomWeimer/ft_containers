@@ -74,7 +74,7 @@ all:	$(OBJ_DIR) $(TARGET)
 
 $(OBJ_DIR):
 	@ mkdir -p $(OBJ_DIR)
-	$(foreach listObj, $(SRCS_SUBDIR), $(NEWSUBDIR))
+	@$(foreach listObj, $(SRCS_SUBDIR), $(NEWSUBDIR))
 
 $(TARGET):	$(SRCS) $(OBJS)
 	@ $(ECHO) "$(GREEN) $(TARGET) compiled with success!$(RESET)"
