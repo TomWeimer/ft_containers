@@ -124,7 +124,7 @@ bool compare_file(std::string filename_std, std::string filename_ft)
 		}
 		// std::cerr << "std: " << line[0] << "["<< std::endl;
 		// std::cerr << "ft: " << line[1] << "[" << std::endl << std::endl;
-		// line[0].clear();
+		line[0].clear();
 		line[1].clear();
 
 	}

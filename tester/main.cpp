@@ -18,8 +18,8 @@ int main(int argc, char *argv[])
 	}
 	else if (mode == BOTH_ARG)
 	{
-		compareVectorTest();
-		compareMapTest();
+		// compareVectorTest();
+		// compareMapTest();
 		compareStackTest();
 	}
 }

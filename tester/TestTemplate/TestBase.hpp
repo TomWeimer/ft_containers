@@ -128,10 +128,11 @@ void TestBase::compareTest()
 	filename[0] = logfile.get_fullname();
 	launch_ft_tests();
 	filename[1] = logfile.get_fullname();
+	
 	if (compare_file(filename[0], filename[1]) == false)
-		std::cerr << COLOR_RED << " [X]" << COLOR_RESET;
+		std::cout << COLOR_RED << " [X]" << COLOR_RESET;
 	else
-		std::cerr <<COLOR_GREEN << " [✓]" << COLOR_RESET;
+		std::cout << COLOR_GREEN << " [✓]" << COLOR_RESET;
 }
 
 void TestBase::clear()
