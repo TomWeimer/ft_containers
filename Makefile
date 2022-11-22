@@ -75,6 +75,7 @@ all:	$(OBJ_DIR) $(TARGET)
 $(OBJ_DIR):
 	@ mkdir -p $(OBJ_DIR)
 	@$(foreach listObj, $(SRCS_SUBDIR), $(NEWSUBDIR))
+	@mkdir -p "logs/map/my_map" "logs/map/map_std" "logs/vector/my_vector" "logs/vector/vector_std" "logs/stack/my_stack" "logs/stack/stack_std"
 
 $(TARGET):	$(SRCS) $(OBJS)
 	@ $(ECHO) "$(GREEN) $(TARGET) compiled with success!$(RESET)"
@@ -88,6 +89,7 @@ clean:
 fclean: clean
 	@ $(ECHO) "		$(RESET) $(TARGET)\n"
 	@ rm -rf $(TARGET)
+	rm -rf "logs/"
 
 re: fclean all
 
